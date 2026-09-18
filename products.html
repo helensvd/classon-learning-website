@@ -1,427 +1,356 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Learning Kits Catalog | Classon Learning</title>
-<meta name="description" content="Browse wholesale learning kits: cosmetology, lash extension, permanent makeup, HVAC, culinary, uniforms, and merch.">
+<title>Classon Learning | Kit Catalog</title>
+<meta name="description" content="Standard kit builds for cosmetology, lash extension, permanent makeup, HVAC/R, culinary, uniforms and program merch — every one of them a starting point for a custom spec.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Work+Sans:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Onest:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="css/landing.css">
+<link rel="stylesheet" href="css/pages.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
-    <a href="index.html" class="logo">
-      <span class="logo-mark">C</span>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">C</span>
       <span>
-        <span class="logo-word"><b>Classon</b> <b class="accent">Learning</b></span>
-        <span class="logo-sub">Wholesale Trade Kits</span>
+        <span class="brand-name">Classon Learning</span>
+        <span class="brand-sub">Custom kits for schools</span>
       </span>
     </a>
-
-    <nav class="main-nav">
-      <a href="index.html" data-i18n lang="en">Home</a>
-      <a href="index.html" data-i18n lang="es">Inicio</a>
-      <a href="products.html" data-i18n lang="en">Learning Kits</a>
-      <a href="products.html" data-i18n lang="es">Kits Educativos</a>
-      <a href="about.html" data-i18n lang="en">About Us</a>
-      <a href="about.html" data-i18n lang="es">Nosotros</a>
-      <a href="contact.html" data-i18n lang="en">Contact</a>
-      <a href="contact.html" data-i18n lang="es">Contacto</a>
+    <nav class="top-nav">
+      <a href="index.html#process">How it works</a>
+      <a href="products.html">Kits</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
-
-    <div class="header-actions">
-      <div class="lang-toggle">
-        <button data-lang="en">EN</button>
-        <button data-lang="es">ES</button>
-      </div>
-      <a href="contact.html" class="btn btn-outline" data-i18n lang="en">Become a Dealer</a>
-      <a href="contact.html" class="btn btn-outline" data-i18n lang="es">Ser Distribuidor</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
-    </div>
+    <a class="btn btn-line" href="contact.html">Request a proposal</a>
   </div>
 </header>
 
-<section style="padding-bottom: 0;">
-  <div class="container section-head">
-    <span class="eyebrow" data-i18n lang="en">Kit Catalog</span>
-    <span class="eyebrow" data-i18n lang="es">Cat&aacute;logo de Kits</span>
-    <h2 data-i18n lang="en">Wholesale learning kits by trade</h2>
-    <h2 data-i18n lang="es">Kits educativos al mayoreo por especialidad</h2>
-    <p data-i18n lang="en">Available exclusively to approved wholesale accounts &mdash; schools, distributors, and training centers. Request a quote for pricing and minimum order quantities.</p>
-    <p data-i18n lang="es">Disponibles exclusivamente para cuentas de mayoreo aprobadas &mdash; escuelas, distribuidores y centros de capacitaci&oacute;n. Solicite una cotizaci&oacute;n para precios y cantidades m&iacute;nimas.</p>
+<section class="phead">
+  <img src="https://images.unsplash.com/photo-1549271568-e87e07c5406b?auto=format&fit=crop&w=2000&q=70"
+       alt="A full barbering and styling tool kit laid out on a work surface">
+  <div class="phead-in">
+    <p class="eyebrow on-dark">Kit catalog</p>
+    <h1>Standard builds, and where yours starts.</h1>
+    <p class="lede">These are the kits we ship most often. Every one is a starting point — items get added, swapped or removed once we see your syllabus and your cohort size.</p>
   </div>
 </section>
 
-<section style="padding-top: 0;">
-  <div class="container">
-    <div class="filter-bar">
-      <button data-filter="all" class="active" data-i18n lang="en">All Kits</button>
-      <button data-filter="all" class="active" data-i18n lang="es">Todos los Kits</button>
-      <button data-filter="cosmetology" data-i18n lang="en">Cosmetology</button>
-      <button data-filter="cosmetology" data-i18n lang="es">Cosmetolog&iacute;a</button>
-      <button data-filter="lash" data-i18n lang="en">Lash Extension</button>
-      <button data-filter="lash" data-i18n lang="es">Extensiones de Pesta&ntilde;as</button>
-      <button data-filter="pmu" data-i18n lang="en">Permanent Makeup</button>
-      <button data-filter="pmu" data-i18n lang="es">Maquillaje Permanente</button>
-      <button data-filter="hvac" data-i18n lang="en">HVAC/R</button>
-      <button data-filter="hvac" data-i18n lang="es">HVAC/R</button>
-      <button data-filter="culinary" data-i18n lang="en">Culinary</button>
-      <button data-filter="culinary" data-i18n lang="es">Gastronom&iacute;a</button>
-      <button data-filter="uniforms" data-i18n lang="en">Uniforms</button>
-      <button data-filter="uniforms" data-i18n lang="es">Uniformes</button>
-      <button data-filter="merch" data-i18n lang="en">Merch</button>
-      <button data-filter="merch" data-i18n lang="es">Mercanc&iacute;a</button>
-    </div>
+<nav class="chips" aria-label="Jump to a program">
+  <div class="chips-in">
+    <a href="#cosmetology">Cosmetology</a>
+    <a href="#lash">Lash extension</a>
+    <a href="#pmu">Permanent makeup</a>
+    <a href="#hvac">HVAC/R</a>
+    <a href="#culinary">Culinary</a>
+    <a href="#uniforms">Uniforms</a>
+    <a href="#merch">Program merch</a>
+  </div>
+</nav>
 
-    <div class="grid-3" id="kit-grid">
+<section class="sec">
+  <div class="shell">
 
-      <div class="kit-card" data-category="cosmetology">
-        <div class="kit-thumb" style="background:#b5548c;">&#9986;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Cosmetology</span>
-          <span class="tag" data-i18n lang="es">Cosmetolog&iacute;a</span>
-          <h3 data-i18n lang="en">Mannequin Practice Set</h3>
-          <h3 data-i18n lang="es">Set de Pr&aacute;ctica con Maniqu&iacute;</h3>
-          <p data-i18n lang="en">Training heads, shears, and styling tools bundled for cosmetology cohorts.</p>
-          <p data-i18n lang="es">Cabezas de entrenamiento, tijeras y herramientas de estilismo para grupos de cosmetolog&iacute;a.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 15 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 15 unidades</span>
-            <span>SKU CL-CO-140</span>
-          </div>
+    <!-- ============ COSMETOLOGY ============ -->
+    <section class="prog" id="cosmetology">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1599351431613-18ef1fdd27e1?auto=format&fit=crop&w=1800&q=70" alt="Rows of professional clippers and styling tools">
+        <div class="prog-banner-txt">
+          <h2>Cosmetology</h2>
+          <p>Hair, nails and skin under one program — usually the largest cohort a school runs, and the kit most worth getting exactly right.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="cosmetology">
-        <div class="kit-thumb" style="background:#b5548c;">&#128135;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Cosmetology</span>
-          <span class="tag" data-i18n lang="es">Cosmetolog&iacute;a</span>
-          <h3 data-i18n lang="en">Student Shear &amp; Tool Kit</h3>
-          <h3 data-i18n lang="es">Kit de Tijeras y Herramientas para Estudiantes</h3>
-          <p data-i18n lang="en">Professional shears, combs, brushes, and sectioning clips for daily practice.</p>
-          <p data-i18n lang="es">Tijeras profesionales, peines, cepillos y pinzas de sujeci&oacute;n para pr&aacute;ctica diaria.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 20 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 20 unidades</span>
-            <span>SKU CL-CO-205</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1775500835259-d3b3f6d6e2f2?auto=format&fit=crop&w=900&q=70" alt="Steel nail-technician instruments from a complete kit"></div>
+          <div class="kit-body">
+            <h3>Complete Manicure &amp; Nail Tech Kit</h3>
+            <p>Portable UV/LED lamp, rechargeable e-file drill, practice hand with replacement tips, gel and acrylic brush set, polishes, primer, dehydrator and finishing supplies.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-CO-318</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1549271568-e87e07c5406b?auto=format&fit=crop&w=900&q=70" alt="Shears, combs and clippers arranged as a complete tool kit"></div>
+          <div class="kit-body">
+            <h3>Student Shear &amp; Tool Kit</h3>
+            <p>Professional shears, thinning shears, combs, brushes and sectioning clips — the daily-practice kit a student carries for the whole program.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 20 units</span><span class="sku">CL-CO-205</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&w=900&q=70" alt="Cosmetology students holding shears during a practical class"></div>
+          <div class="kit-body">
+            <h3>Mannequin Practice Set</h3>
+            <p>Training heads, tripod clamps and styling tools bundled per student, sized so a full cohort can work a practical at the same time.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 15 units</span><span class="sku">CL-CO-140</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ LASH ============ -->
+    <section class="prog" id="lash">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1639629509821-c54cdd984227?auto=format&fit=crop&w=1800&q=70" alt="Close-up of finished lash extensions">
+        <div class="prog-banner-txt">
+          <h2>Lash extension</h2>
+          <p>A short, high-margin certification — so the kit has to be ready on day one and cheap to restock in week three.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="cosmetology">
-        <div class="kit-thumb" style="background:#b5548c;">&#128133;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Cosmetology</span>
-          <span class="tag" data-i18n lang="es">Cosmetolog&iacute;a</span>
-          <h3 data-i18n lang="en">Complete Manicure &amp; Nail Tech Kit</h3>
-          <h3 data-i18n lang="es">Kit Completo de Manicure y T&eacute;cnica de U&ntilde;as</h3>
-          <p data-i18n lang="en">Full nail-tech starter bundle &mdash; portable UV/LED lamp, rechargeable nail drill, practice hand, gel/acrylic brush set, gel polishes, primers, dehydrator, and finishing supplies for manicure and nail art instruction.</p>
-          <p data-i18n lang="es">Paquete completo de inicio para t&eacute;cnica de u&ntilde;as &mdash; l&aacute;mpara UV/LED port&aacute;til, torno de u&ntilde;as recargable, mano de pr&aacute;ctica, set de pinceles para gel/acr&iacute;lico, esmaltes en gel, imprimadores, deshidratador y acabados para instrucci&oacute;n de manicure y nail art.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-CO-318</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1674049406467-824ea37c7184?auto=format&fit=crop&w=900&q=70" alt="Lash technician applying extensions to a client"></div>
+          <div class="kit-body">
+            <h3>Classic Lash Extension Starter Kit</h3>
+            <p>Lash trays across curls and lengths, adhesive, primer, isolation and application tweezers, plus a practice mannequin head per student.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-LX-110</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1735151226446-1d364b4adc2f?auto=format&fit=crop&w=900&q=70" alt="Lash tweezers being used during a lash application"></div>
+          <div class="kit-body">
+            <h3>Volume Lash Practice Kit</h3>
+            <p>Fan-forming tweezers, volume trays and practice strips for the advanced module — added as a second-term top-up rather than bundled up front.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-LX-225</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ PMU ============ -->
+    <section class="prog" id="pmu">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1507092183626-4e8793315843?auto=format&fit=crop&w=1800&q=70" alt="A set of professional makeup brushes">
+        <div class="prog-banner-txt">
+          <h2>Permanent makeup</h2>
+          <p>Technique moves fast here. We re-source this category every term instead of shipping what was current three years ago.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="lash">
-        <div class="kit-thumb" style="background:#7c5cbf;">&#128065;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Lash Extension</span>
-          <span class="tag" data-i18n lang="es">Extensiones de Pesta&ntilde;as</span>
-          <h3 data-i18n lang="en">Classic Lash Extension Starter Kit</h3>
-          <h3 data-i18n lang="es">Kit de Inicio de Extensiones Cl&aacute;sicas</h3>
-          <p data-i18n lang="en">Lash trays, adhesive, tweezers, and practice mannequin heads for classic technique training.</p>
-          <p data-i18n lang="es">Charolas de pesta&ntilde;as, adhesivo, pinzas y cabezas de maniqu&iacute; de pr&aacute;ctica para entrenamiento de t&eacute;cnica cl&aacute;sica.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-LX-110</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1687716432612-2a46da37a43b?auto=format&fit=crop&w=900&q=70" alt="Pigment brushes and precision tools from a microblading kit"></div>
+          <div class="kit-body">
+            <h3>Microblading Practice Kit</h3>
+            <p>Practice skins, microblading pens, pigments and precision blades for the brow module, with enough consumable volume to cover a full term.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-PM-130</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1679307658813-da95b901ecd9?auto=format&fit=crop&w=900&q=70" alt="A permanent makeup brush and pigment set"></div>
+          <div class="kit-body">
+            <h3>PMU Machine &amp; Pigment Starter Set</h3>
+            <p>PMU machine, needle cartridges and a curated pigment palette covering lips, brows and eyeliner work across a range of skin tones.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 5 units</span><span class="sku">CL-PM-240</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ HVAC ============ -->
+    <section class="prog" id="hvac">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1705579605238-24a90c8799c5?auto=format&fit=crop&w=1800&q=70" alt="Technician working on rooftop HVAC equipment">
+        <div class="prog-banner-txt">
+          <h2>HVAC/R</h2>
+          <p>Heavier kits, longer lead times and real equipment budgets. This is the category where getting the spec wrong is most expensive.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="lash">
-        <div class="kit-thumb" style="background:#7c5cbf;">&#129718;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Lash Extension</span>
-          <span class="tag" data-i18n lang="es">Extensiones de Pesta&ntilde;as</span>
-          <h3 data-i18n lang="en">Volume Lash Practice Kit</h3>
-          <h3 data-i18n lang="es">Kit de Pr&aacute;ctica de Pesta&ntilde;as Volumen</h3>
-          <p data-i18n lang="en">Fan-forming tweezers, volume lash trays, and practice strips for advanced technique.</p>
-          <p data-i18n lang="es">Pinzas para formar abanicos, charolas de pesta&ntilde;as volumen y tiras de pr&aacute;ctica para t&eacute;cnica avanzada.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-LX-225</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1585569695919-db237e7cc455?auto=format&fit=crop&w=900&q=70" alt="An open tool case holding a complete technician kit"></div>
+          <div class="kit-body">
+            <h3>Complete HVAC Technician Kit</h3>
+            <p>Manifold gauge set with charging hoses, flaring and swaging tools, digital clamp meter and a rugged case — the kit a student leaves the program owning.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 5 units</span><span class="sku">CL-HV-425</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=70" alt="Technician servicing a heating and cooling unit"></div>
+          <div class="kit-body">
+            <h3>Gauge Set &amp; Brazing Practice Kit</h3>
+            <p>Manifold gauge sets paired with copper coupons, so brazing technique gets practiced on scrap before anyone touches a live system.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-HV-118</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1615774925655-a0e97fc85c14?auto=format&fit=crop&w=900&q=70" alt="Trainee working on an equipment control panel"></div>
+          <div class="kit-body">
+            <h3>Refrigeration Cycle Demo Unit</h3>
+            <p>Clear-panel trainer running a live cycle, so compressor, condenser and evaporator stages can be pointed at rather than drawn on a whiteboard.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 3 units</span><span class="sku">CL-HV-310</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CULINARY ============ -->
+    <section class="prog" id="culinary">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1780761423618-e72cb513cc5b?auto=format&fit=crop&w=1800&q=70" alt="A row of chef knives">
+        <div class="prog-banner-txt">
+          <h2>Culinary</h2>
+          <p>Knife rolls are the one kit students genuinely want to keep. Branding them for the school is worth more than it costs.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="pmu">
-        <div class="kit-thumb" style="background:#c46a4d;">&#9999;&#65039;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Permanent Makeup</span>
-          <span class="tag" data-i18n lang="es">Maquillaje Permanente</span>
-          <h3 data-i18n lang="en">Microblading Practice Kit</h3>
-          <h3 data-i18n lang="es">Kit de Pr&aacute;ctica de Microblading</h3>
-          <p data-i18n lang="en">Practice skins, microblading pens, pigments, and precision blades for brow technique training.</p>
-          <p data-i18n lang="es">Pieles de pr&aacute;ctica, plumas de microblading, pigmentos y hojas de precisi&oacute;n para entrenamiento de t&eacute;cnica de cejas.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-PM-130</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1547978074-bf0b7285d686?auto=format&fit=crop&w=900&q=70" alt="Chef and paring knives arranged on a white surface"></div>
+          <div class="kit-body">
+            <h3>Culinary Knife &amp; Tool Starter Kit</h3>
+            <p>Chef and paring knives, cutting board, thermometer and the small tools a knife-skills module actually uses, in a roll that survives the program.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 15 units</span><span class="sku">CL-CU-115</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1780761425281-a2fe52e1b9e2?auto=format&fit=crop&w=900&q=70" alt="Kitchen knives laid out on a wooden board"></div>
+          <div class="kit-body">
+            <h3>Bakeshop Fundamentals Kit</h3>
+            <p>Measuring sets, mixing bowls, bench scrapers and pastry tools for the baking module — specified per station rather than per student.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 10 units</span><span class="sku">CL-CU-230</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ UNIFORMS ============ -->
+    <section class="prog" id="uniforms">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1642976482503-3f67b345dbac?auto=format&fit=crop&w=1800&q=70" alt="A student in clinical scrubs">
+        <div class="prog-banner-txt">
+          <h2>Uniforms</h2>
+          <p>Sized per cohort and embroidered before they ship, so nobody on your staff is sorting boxes the week before intake.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="pmu">
-        <div class="kit-thumb" style="background:#c46a4d;">&#127912;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Permanent Makeup</span>
-          <span class="tag" data-i18n lang="es">Maquillaje Permanente</span>
-          <h3 data-i18n lang="en">PMU Machine &amp; Pigment Starter Set</h3>
-          <h3 data-i18n lang="es">Set de Inicio de M&aacute;quina PMU y Pigmentos</h3>
-          <p data-i18n lang="en">PMU machine, needle cartridges, and a curated pigment palette for lips, brows, and eyeliner work.</p>
-          <p data-i18n lang="es">M&aacute;quina PMU, cartuchos de agujas y una paleta de pigmentos curada para labios, cejas y delineado.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 5 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 5 unidades</span>
-            <span>SKU CL-PM-240</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1666887360921-85952a86894f?auto=format&fit=crop&w=900&q=70" alt="Student wearing clinical scrubs"></div>
+          <div class="kit-body">
+            <h3>Student Scrub &amp; Lab Coat Bundle</h3>
+            <p>Sized scrub sets and lab coats for cosmetology, esthetics and clinical programs, embroidered with your school mark at no extra setup.</p>
           </div>
+          <div class="kit-meta"><span>MOQ 20 units</span><span class="sku">CL-UN-120</span></div>
+        </article>
+
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1730597842283-943c7986ee2c?auto=format&fit=crop&w=900&q=70" alt="Student in program uniform"></div>
+          <div class="kit-body">
+            <h3>Program-Branded Apron &amp; Polo Set</h3>
+            <p>Custom-embroidered aprons and polos sized for culinary and trade cohorts, restocked mid-year without a new setup charge.</p>
+          </div>
+          <div class="kit-meta"><span>MOQ 25 units</span><span class="sku">CL-UN-245</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ MERCH ============ -->
+    <section class="prog" id="merch">
+      <div class="prog-banner">
+        <img loading="lazy" src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1800&q=70" alt="Stock ready for dispatch in a distribution warehouse">
+        <div class="prog-banner-txt">
+          <h2>Program merch</h2>
+          <p>The margin line most schools leave on the table. A student store stocked at wholesale pays for itself inside one intake.</p>
         </div>
       </div>
+      <div class="kits">
 
-      <div class="kit-card" data-category="hvac">
-        <div class="kit-thumb" style="background:#2a9d8f;">&#10052;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">HVAC/R</span>
-          <span class="tag" data-i18n lang="es">HVAC/R</span>
-          <h3 data-i18n lang="en">Refrigeration Cycle Demo Unit</h3>
-          <h3 data-i18n lang="es">Unidad de Demostraci&oacute;n del Ciclo de Refrigeraci&oacute;n</h3>
-          <p data-i18n lang="en">Clear-panel trainer showing compressor, condenser, and evaporator stages live.</p>
-          <p data-i18n lang="es">Entrenador de panel transparente que muestra en vivo compresor, condensador y evaporador.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 3 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 3 unidades</span>
-            <span>SKU CL-HV-310</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=70" alt="Boxed welcome packs ready to be handed out"></div>
+          <div class="kit-body">
+            <h3>Student Welcome Merch Pack</h3>
+            <p>Tote, bottle, lanyard and sticker set, boxed one per student and branded for your program — handed out on day one with the kit.</p>
           </div>
-        </div>
-      </div>
+          <div class="kit-meta"><span>MOQ 25 units</span><span class="sku">CL-MR-110</span></div>
+        </article>
 
-      <div class="kit-card" data-category="hvac">
-        <div class="kit-thumb" style="background:#2a9d8f;">&#128295;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">HVAC/R</span>
-          <span class="tag" data-i18n lang="es">HVAC/R</span>
-          <h3 data-i18n lang="en">Gauge Set &amp; Brazing Practice Kit</h3>
-          <h3 data-i18n lang="es">Kit de Man&oacute;metros y Pr&aacute;ctica de Soldadura Fuerte</h3>
-          <p data-i18n lang="en">Manifold gauge sets paired with copper coupons for brazing technique practice.</p>
-          <p data-i18n lang="es">Man&oacute;metros tipo m&uacute;ltiple junto con cupones de cobre para pr&aacute;ctica de soldadura fuerte.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-HV-118</span>
+        <article class="kit">
+          <div class="kit-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1762328023330-8a8e0170592b?auto=format&fit=crop&w=900&q=70" alt="Branded workwear worn on site"></div>
+          <div class="kit-body">
+            <h3>Campus Spirit Gear Bundle</h3>
+            <p>Branded hoodies, tees and caps for the student store, priced so the school keeps a real margin rather than breaking even on it.</p>
           </div>
-        </div>
-      </div>
+          <div class="kit-meta"><span>MOQ 20 units</span><span class="sku">CL-MR-220</span></div>
+        </article>
 
-      <div class="kit-card" data-category="hvac">
-        <div class="kit-thumb" style="background:#2a9d8f;">&#129520;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">HVAC/R</span>
-          <span class="tag" data-i18n lang="es">HVAC/R</span>
-          <h3 data-i18n lang="en">Complete HVAC Technician Kit</h3>
-          <h3 data-i18n lang="es">Kit Completo de T&eacute;cnico HVAC</h3>
-          <p data-i18n lang="en">Full field-service bundle &mdash; manifold gauge set with charging hoses, flaring &amp; swaging tool kit, digital clamp meter, and a rugged toolbox for on-site diagnostics and installation training.</p>
-          <p data-i18n lang="es">Paquete completo de servicio en campo &mdash; juego de man&oacute;metros con mangueras de carga, kit de abocardado y expansi&oacute;n, pinza amperim&eacute;trica digital y una caja de herramientas resistente para diagn&oacute;stico e instalaci&oacute;n en campo.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 5 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 5 unidades</span>
-            <span>SKU CL-HV-425</span>
-          </div>
-        </div>
       </div>
+    </section>
 
-      <div class="kit-card" data-category="culinary">
-        <div class="kit-thumb" style="background:#a6432e;">&#128298;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Culinary</span>
-          <span class="tag" data-i18n lang="es">Gastronom&iacute;a</span>
-          <h3 data-i18n lang="en">Culinary Knife &amp; Tool Starter Kit</h3>
-          <h3 data-i18n lang="es">Kit de Inicio de Cuchillos y Herramientas Culinarias</h3>
-          <p data-i18n lang="en">Chef and paring knives, cutting boards, and thermometers for foundational knife-skills training.</p>
-          <p data-i18n lang="es">Cuchillos de chef y mondador, tablas de cortar y term&oacute;metros para entrenamiento b&aacute;sico de t&eacute;cnica de cuchillo.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 15 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 15 unidades</span>
-            <span>SKU CL-CU-115</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="kit-card" data-category="culinary">
-        <div class="kit-thumb" style="background:#a6432e;">&#129360;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Culinary</span>
-          <span class="tag" data-i18n lang="es">Gastronom&iacute;a</span>
-          <h3 data-i18n lang="en">Bakeshop Fundamentals Kit</h3>
-          <h3 data-i18n lang="es">Kit de Fundamentos de Pasteler&iacute;a</h3>
-          <p data-i18n lang="en">Measuring sets, mixing bowls, and pastry tools for baking and pastry program basics.</p>
-          <p data-i18n lang="es">Sets de medici&oacute;n, tazones y herramientas de pasteler&iacute;a para fundamentos de programas de panader&iacute;a.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 10 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 10 unidades</span>
-            <span>SKU CL-CU-230</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="kit-card" data-category="uniforms">
-        <div class="kit-thumb" style="background:#457b9d;">&#129404;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Uniforms</span>
-          <span class="tag" data-i18n lang="es">Uniformes</span>
-          <h3 data-i18n lang="en">Student Scrub &amp; Lab Coat Bundle</h3>
-          <h3 data-i18n lang="es">Paquete de Uniformes Cl&iacute;nicos y Batas para Estudiantes</h3>
-          <p data-i18n lang="en">Sized scrub sets and lab coats for cosmetology, esthetics, and clinical training programs.</p>
-          <p data-i18n lang="es">Sets de uniformes cl&iacute;nicos y batas en tallas para programas de cosmetolog&iacute;a, est&eacute;tica y entrenamiento cl&iacute;nico.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 20 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 20 unidades</span>
-            <span>SKU CL-UN-120</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="kit-card" data-category="uniforms">
-        <div class="kit-thumb" style="background:#457b9d;">&#128085;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Uniforms</span>
-          <span class="tag" data-i18n lang="es">Uniformes</span>
-          <h3 data-i18n lang="en">Program-Branded Apron &amp; Polo Set</h3>
-          <h3 data-i18n lang="es">Set de Delantal y Polo con Marca del Programa</h3>
-          <p data-i18n lang="en">Custom-embroidered aprons and polos sized for culinary and trade cohorts.</p>
-          <p data-i18n lang="es">Delantales y polos bordados a la medida en tallas para grupos culinarios y t&eacute;cnicos.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 25 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 25 unidades</span>
-            <span>SKU CL-UN-245</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="kit-card" data-category="merch">
-        <div class="kit-thumb" style="background:#d19a3e;">&#127890;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Merch</span>
-          <span class="tag" data-i18n lang="es">Mercanc&iacute;a</span>
-          <h3 data-i18n lang="en">Student Welcome Merch Pack</h3>
-          <h3 data-i18n lang="es">Paquete de Bienvenida para Estudiantes</h3>
-          <p data-i18n lang="en">Tote bag, water bottle, lanyard, and stickers branded for new-student welcome kits.</p>
-          <p data-i18n lang="es">Bolsa tote, botella de agua, cord&oacute;n y calcoman&iacute;as con marca para kits de bienvenida de nuevos estudiantes.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 25 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 25 unidades</span>
-            <span>SKU CL-MR-110</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="kit-card" data-category="merch">
-        <div class="kit-thumb" style="background:#d19a3e;">&#128717;&#65039;</div>
-        <div class="kit-body">
-          <span class="tag" data-i18n lang="en">Merch</span>
-          <span class="tag" data-i18n lang="es">Mercanc&iacute;a</span>
-          <h3 data-i18n lang="en">Campus Spirit Gear Bundle</h3>
-          <h3 data-i18n lang="es">Paquete de Art&iacute;culos de Esp&iacute;ritu del Campus</h3>
-          <p data-i18n lang="en">Branded hoodies, tees, and caps for student stores and program spirit days.</p>
-          <p data-i18n lang="es">Sudaderas, playeras y gorras de marca para tiendas estudiantiles y d&iacute;as de esp&iacute;ritu del programa.</p>
-          <div class="kit-meta">
-            <span data-i18n lang="en">MOQ: 20 units</span>
-            <span data-i18n lang="es">M&iacute;nimo: 20 unidades</span>
-            <span>SKU CL-MR-220</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
-<section class="alt-bg">
-  <div class="container">
-    <div class="cta-band" style="margin:0;">
-      <h2 data-i18n lang="en">Don't see the kit you need?</h2>
-      <h2 data-i18n lang="es">&iquest;No encuentra el kit que necesita?</h2>
-      <p data-i18n lang="en">We build custom bundles for full training programs &mdash; tell us your curriculum and cohort size.</p>
-      <p data-i18n lang="es">Creamos paquetes personalizados para programas completos &mdash; cu&eacute;ntenos su plan de estudios y tama&ntilde;o de grupo.</p>
-      <div class="hero-ctas">
-        <a href="contact.html" class="btn btn-primary" data-i18n lang="en">Request a Custom Quote</a>
-        <a href="contact.html" class="btn btn-primary" data-i18n lang="es">Solicitar Cotizaci&oacute;n Personalizada</a>
-      </div>
-    </div>
+<section class="sec sec-dark">
+  <div class="shell band">
+    <p class="eyebrow on-dark">Nothing here matches?</p>
+    <h2>That is usually how it starts.</h2>
+    <p class="lede">Most schools we work with needed something that was not on this page. Send us the syllabus and the cohort size, and you get a line-by-line spec back — not a link to the nearest standard kit.</p>
+    <a class="btn btn-solid" href="contact.html">Request a custom kit proposal</a>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
+<footer class="foot">
+  <div class="shell">
+    <div class="foot-grid">
       <div>
-        <a href="index.html" class="logo" style="margin-bottom:14px;">
-          <span class="logo-mark">C</span>
-          <span class="logo-word"><b>Classon</b> <b class="accent">Learning</b></span>
+        <a class="brand" href="index.html">
+          <span class="brand-mark">C</span>
+          <span><span class="brand-name">Classon Learning</span></span>
         </a>
-        <p data-i18n lang="en">Wholesale learning kits for trade and vocational schools in the United States and Mexico.</p>
-        <p data-i18n lang="es">Kits educativos al mayoreo para escuelas t&eacute;cnicas y vocacionales en Estados Unidos y M&eacute;xico.</p>
+        <p class="foot-blurb">Custom training kits, uniforms and program merch for vocational schools in the United States and Mexico.</p>
       </div>
       <div>
-        <h4 data-i18n lang="en">Company</h4>
-        <h4 data-i18n lang="es">Empresa</h4>
+        <h4>Programs</h4>
         <ul>
-          <li><a href="about.html" data-i18n lang="en">About Us</a><a href="about.html" data-i18n lang="es">Nosotros</a></li>
-          <li><a href="products.html" data-i18n lang="en">Kit Catalog</a><a href="products.html" data-i18n lang="es">Cat&aacute;logo</a></li>
-          <li><a href="contact.html" data-i18n lang="en">Contact</a><a href="contact.html" data-i18n lang="es">Contacto</a></li>
+          <li><a href="products.html#cosmetology">Cosmetology</a></li>
+          <li><a href="products.html#lash">Lash extension</a></li>
+          <li><a href="products.html#pmu">Permanent makeup</a></li>
+          <li><a href="products.html#hvac">HVAC/R</a></li>
+          <li><a href="products.html#culinary">Culinary</a></li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n lang="en">Categories</h4>
-        <h4 data-i18n lang="es">Categor&iacute;as</h4>
+        <h4>Also supplied</h4>
         <ul>
-          <li><a href="products.html">Cosmetology</a></li>
-          <li><a href="products.html">Lash Extension</a></li>
-          <li><a href="products.html">Permanent Makeup</a></li>
-          <li><a href="products.html">HVAC/R</a></li>
-          <li><a href="products.html">Culinary</a></li>
-          <li><a href="products.html">Uniforms</a></li>
-          <li><a href="products.html">Merch</a></li>
+          <li><a href="products.html#uniforms">Student uniforms</a></li>
+          <li><a href="products.html#merch">Program merch</a></li>
+          <li><a href="contact.html">Consumable restock</a></li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n lang="en">Contact</h4>
-        <h4 data-i18n lang="es">Contacto</h4>
+        <h4>Talk to us</h4>
         <ul>
-          <li>sales@classonlearning.com</li>
+          <li><a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a></li>
           <li>+1 (555) 019-4420</li>
-          <li data-i18n lang="en">U.S. &amp; Mexico warehousing</li>
-          <li data-i18n lang="es">Bodegas en EE.&nbsp;UU. y M&eacute;xico</li>
+          <li>+52 (55) 4040-1188</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Classon Learning. <span data-i18n lang="en">All rights reserved.</span><span data-i18n lang="es">Todos los derechos reservados.</span></span>
-      <span data-i18n lang="en">Wholesale accounts only &mdash; not open to individual consumers.</span>
-      <span data-i18n lang="es">Solo cuentas de mayoreo &mdash; no disponible para consumidores individuales.</span>
-    </div>
+    <p class="foot-note">© 2026 Classon Learning · Wholesale to institutions only — we do not sell to individual consumers.</p>
   </div>
 </footer>
 
-<script src="js/main.js"></script>
 </body>
 </html>
