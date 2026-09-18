@@ -1,0 +1,237 @@
+/* ==========================================================================
+   Classon Learning — subpage components
+   Extends css/landing.css; load it second. Tokens all come from there.
+   ========================================================================== */
+
+/* ---------- compact page head (the subpage equivalent of .hero) ----------- */
+.phead {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: min(56vh, 480px);
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+.phead > img {
+  position: absolute;
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.phead::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 18, 28, .78) 0%, rgba(10, 18, 28, .42) 40%, rgba(10, 18, 28, .86) 100%);
+}
+.phead-in {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: 0 var(--gutter) clamp(38px, 5vw, 62px);
+  color: #fff;
+}
+.phead h1 {
+  font-size: clamp(2.1rem, 5vw, 3.9rem);
+  max-width: 20ch;
+  color: #fff;
+}
+.phead .lede { color: rgba(255, 255, 255, .84); margin-top: 16px; }
+
+/* ---------- program jump bar --------------------------------------------- */
+.chips {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: var(--navy-deep);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+.chips-in {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding: 12px var(--gutter);
+}
+.chips-in::-webkit-scrollbar { display: none; }
+.chips a {
+  flex: 0 0 auto;
+  padding: 8px 15px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  border-radius: 2px;
+  color: rgba(255, 255, 255, .82);
+  font-size: .84rem;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease);
+}
+.chips a:hover { background: rgba(255, 255, 255, .12); border-color: #fff; color: #fff; }
+
+/* ---------- one program: banner, then its kits ---------------------------- */
+.prog { padding-block: clamp(40px, 5vw, 68px); border-top: 1px solid var(--line); }
+.prog:first-of-type { border-top: 0; padding-top: 0; }
+
+/* scroll-margin keeps the sticky chip bar off the heading when jumped to */
+.prog, .anchor { scroll-margin-top: 70px; }
+
+.prog-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+  margin-bottom: clamp(20px, 2.4vw, 32px);
+}
+.prog-banner img { width: 100%; aspect-ratio: 32 / 9; object-fit: cover; }
+.prog-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(10, 18, 28, .82) 0%, rgba(10, 18, 28, .3) 62%, transparent 100%);
+}
+.prog-banner-txt {
+  position: absolute;
+  z-index: 2;
+  left: clamp(20px, 3vw, 40px);
+  bottom: clamp(18px, 2.6vw, 34px);
+  right: clamp(20px, 3vw, 40px);
+  color: #fff;
+}
+.prog-banner-txt h2 { font-size: clamp(1.5rem, 3vw, 2.3rem); color: #fff; }
+.prog-banner-txt p {
+  margin-top: 8px;
+  font-size: .92rem;
+  color: rgba(255, 255, 255, .8);
+  max-width: 52ch;
+}
+
+/* ---------- kit cards ----------------------------------------------------- */
+.kits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: clamp(14px, 1.6vw, 22px);
+}
+.kit {
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.kit-photo { overflow: hidden; }
+.kit-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform .7s var(--ease);
+}
+.kit:hover .kit-photo img { transform: scale(1.04); }
+.kit-body { display: flex; flex-direction: column; flex: 1; padding: 20px 20px 0; }
+.kit-body h3 { font-size: 1.14rem; margin-bottom: 9px; }
+.kit-body p { flex: 1; font-size: .89rem; line-height: 1.6; color: var(--ink-70); }
+.kit-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 12px 20px;
+  border-top: 1px solid var(--line);
+  font-size: .76rem;
+  letter-spacing: .04em;
+  color: var(--ink-45);
+  font-variant-numeric: tabular-nums;
+}
+.kit-meta .sku { text-transform: uppercase; letter-spacing: .1em; }
+
+/* ---------- plain CTA band ------------------------------------------------ */
+.band { text-align: center; }
+.band h2 { font-size: clamp(1.8rem, 3.6vw, 2.8rem); }
+.band .lede { margin: 16px auto 0; }
+.band .btn { margin-top: 28px; }
+
+/* ---------- four-photo strip ---------------------------------------------- */
+.strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(8px, 1vw, 14px); }
+.strip img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 3px; }
+
+/* ---------- beliefs / coverage lists -------------------------------------- */
+.beliefs { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(20px, 2.6vw, 40px); }
+.belief { padding-top: 20px; border-top: 2px solid var(--ink); }
+.belief h3 { font-size: 1.16rem; margin-bottom: 10px; }
+.belief p { font-size: .91rem; line-height: 1.65; color: var(--ink-70); }
+
+.cover { list-style: none; margin: 0; padding: 0; }
+.cover li { padding: 16px 0; border-top: 1px solid rgba(255, 255, 255, .14); font-size: .93rem; }
+.cover li:first-child { border-top: 0; }
+.cover strong { display: block; font-family: var(--f-body); font-size: .7rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--amber); margin-bottom: 5px; }
+
+/* ---------- contact: form + side rail ------------------------------------- */
+.reach {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr);
+  gap: clamp(28px, 4vw, 60px);
+  align-items: start;
+}
+.form-card { background: var(--paper); border: 1px solid var(--line); border-radius: 3px; padding: clamp(22px, 3vw, 38px); }
+.fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.field { display: flex; flex-direction: column; }
+.field.full { grid-column: 1 / -1; }
+.field label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-45);
+  margin-bottom: 7px;
+}
+.field input, .field select, .field textarea {
+  font-family: var(--f-body);
+  font-size: .95rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  padding: 11px 13px;
+  width: 100%;
+  transition: border-color .2s var(--ease);
+}
+.field textarea { min-height: 120px; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--navy); outline: none; }
+.form-card .btn { margin-top: 24px; }
+.form-note { margin-top: 14px; font-size: .78rem; line-height: 1.6; color: var(--ink-45); max-width: 52ch; }
+
+.confirm {
+  display: none;
+  padding: 18px 20px;
+  margin-bottom: 24px;
+  border-left: 3px solid var(--amber);
+  background: var(--paper-2);
+  font-size: .93rem;
+}
+.confirm.show { display: block; }
+.confirm strong { display: block; font-family: var(--f-display); font-size: 1.1rem; margin-bottom: 5px; }
+
+.rail-cards { display: flex; flex-direction: column; gap: 18px; }
+.rail-card { padding-top: 18px; border-top: 2px solid var(--ink); }
+.rail-card h3 { font-size: 1.05rem; margin-bottom: 9px; }
+.rail-card p, .rail-card a { font-size: .91rem; line-height: 1.6; color: var(--ink-70); }
+.rail-card a { text-decoration: none; border-bottom: 1px solid var(--line); }
+.rail-card a:hover { border-bottom-color: var(--ink); }
+
+/* ---------- responsive ---------------------------------------------------- */
+@media (max-width: 1000px) {
+  .reach { grid-template-columns: minmax(0, 1fr); }
+  .prog-banner img { aspect-ratio: 21 / 9; }
+}
+
+@media (max-width: 720px) {
+  .phead { min-height: min(50vh, 400px); }
+  .fields { grid-template-columns: minmax(0, 1fr); }
+  .strip { grid-template-columns: repeat(2, 1fr); }
+  .prog-banner img { aspect-ratio: 16 / 9; }
+}
