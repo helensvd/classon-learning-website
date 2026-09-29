@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Onest:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="css/landing.css">
 <link rel="stylesheet" href="css/pages.css">
+<link rel="stylesheet" href="css/shop.css">
 </head>
 <body>
 
@@ -25,6 +26,7 @@
     <nav class="top-nav">
       <a href="index.html#process">How it works</a>
       <a href="products.html">Kits</a>
+      <a href="shop.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -188,6 +190,7 @@
       <div>
         <h4>Also supplied</h4>
         <ul>
+          <li><a href="shop.html">Order standard kits</a></li>
           <li><a href="products.html#uniforms">Student uniforms</a></li>
           <li><a href="products.html#merch">Program merch</a></li>
           <li><a href="contact.html">Consumable restock</a></li>
@@ -213,6 +216,12 @@
   var form = document.getElementById('proposal-form');
   var confirmBox = document.getElementById('confirm');
   if (!form) return;
+
+  var kit = new URLSearchParams(window.location.search).get('kit');
+  var notes = document.getElementById('f-message');
+  if (kit && notes && !notes.value) {
+    notes.value = 'Interested in an ongoing supply agreement for ' + kit + '. ';
+  }
 
   var labels = {
     name: 'Name', school: 'School / company', email: 'Email', phone: 'Phone',
@@ -243,5 +252,6 @@
 })();
 </script>
 
+<script src="js/shop.js"></script>
 </body>
 </html>
