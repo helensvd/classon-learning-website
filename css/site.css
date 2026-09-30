@@ -200,3 +200,5 @@
 .founder-links { margin-top: 18px; font-size: .88rem; color: var(--ink-70); }
 .founder-links a { color: var(--navy); }
 @media (max-width: 1000px) { .founder { grid-template-columns: minmax(0, 1fr); } .founder-img img { max-width: 360px; } }
+.groups-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(28px, 3vw, 40px); }
+@media (max-width: 520px) { .groups-cta .btn { flex: 1 1 100%; justify-content: center; } }
