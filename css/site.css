@@ -1,0 +1,124 @@
+/* ==========================================================================
+   Classon Learning — value, categories, quote and billing components
+   Extends css/landing.css (tokens) and css/pages.css; load last.
+   ========================================================================== */
+
+/* ---------- header ------------------------------------------------------- */
+.top-actions { display: flex; align-items: center; gap: 10px; }
+.top-login { color: rgba(255, 255, 255, .72); font-size: .86rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.top-login:hover { color: #fff; }
+
+/* ---------- hero promise chips ------------------------------------------ */
+.promise { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 26px; padding: 0; list-style: none; }
+.promise li { display: flex; align-items: center; gap: 8px; font-size: .9rem; color: rgba(255, 255, 255, .86); }
+.promise li::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--amber); flex: 0 0 auto; }
+
+/* ---------- value: why schools work with us ------------------------------ */
+.value { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr); gap: clamp(28px, 5vw, 72px); align-items: start; }
+.value-stat { padding: clamp(24px, 3vw, 40px); background: var(--navy-deep); color: #fff; border-radius: 3px; }
+.value-stat strong { display: block; font-family: var(--f-display); font-size: clamp(3rem, 7vw, 5.2rem); line-height: 1; letter-spacing: -.04em; color: var(--amber); }
+.value-stat p { margin-top: 14px; font-size: 1.02rem; line-height: 1.55; color: rgba(255, 255, 255, .86); }
+.value-stat small { display: block; margin-top: 16px; font-size: .76rem; line-height: 1.5; color: rgba(255, 255, 255, .5); }
+.value-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(22px, 3vw, 36px); }
+.value-item { padding-top: 18px; border-top: 2px solid var(--ink); }
+.value-item h3 { font-size: 1.14rem; margin-bottom: 8px; }
+.value-item p { font-size: .92rem; line-height: 1.62; color: var(--ink-70); }
+
+/* ---------- category tiles ----------------------------------------------- */
+.cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: clamp(12px, 1.4vw, 18px); }
+.cat {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 230px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: var(--navy-deep);
+  color: #fff;
+  text-decoration: none;
+}
+.cat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .7s var(--ease); }
+.cat::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 18, 28, .05) 20%, rgba(10, 18, 28, .86) 100%); }
+.cat:hover img { transform: scale(1.05); }
+.cat-txt { position: relative; z-index: 2; padding: 18px 18px 16px; }
+.cat-txt h3 { font-size: 1.12rem; color: #fff; }
+.cat-txt p { margin-top: 5px; font-size: .8rem; line-height: 1.45; color: rgba(255, 255, 255, .78); }
+
+/* ---------- school types -------------------------------------------------- */
+.schools { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.schools li { padding: 10px 16px; border: 1px solid rgba(255, 255, 255, .22); border-radius: 2px; font-size: .9rem; color: rgba(255, 255, 255, .9); }
+
+/* ---------- compact steps ------------------------------------------------- */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(18px, 2.4vw, 32px); counter-reset: step; margin: 0; padding: 0; list-style: none; }
+.steps li { counter-increment: step; padding-top: 18px; border-top: 2px solid var(--ink); }
+.steps li::before {
+  content: counter(step, decimal-leading-zero);
+  display: block;
+  margin-bottom: 10px;
+  font-family: var(--f-display);
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--amber-deep);
+}
+.steps h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.steps p { font-size: .9rem; line-height: 1.6; color: var(--ink-70); }
+
+/* ---------- full-service list --------------------------------------------- */
+.service { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0 clamp(20px, 3vw, 40px); margin: 0; padding: 0; list-style: none; }
+.service li { padding: 14px 0; border-top: 1px solid var(--line); font-size: .93rem; }
+.service strong { display: block; font-family: var(--f-display); font-size: 1rem; margin-bottom: 2px; }
+.service span { color: var(--ink-70); font-size: .87rem; }
+
+/* ---------- billing band -------------------------------------------------- */
+.bill { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 60px); align-items: center; }
+.bill ul { margin: 0; padding: 0; list-style: none; }
+.bill li { padding: 13px 0; border-top: 1px solid var(--line); font-size: .93rem; color: var(--ink-70); }
+.bill li strong { color: var(--ink); }
+
+/* ---------- quote block (form + book a call) ------------------------------ */
+.quote { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .7fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.quote-side { display: flex; flex-direction: column; gap: 18px; }
+.quote-card { padding: 22px 24px; background: var(--paper); border: 1px solid var(--line); border-radius: 3px; }
+.quote-card h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.quote-card p { font-size: .9rem; line-height: 1.6; color: var(--ink-70); }
+.quote-card .btn { margin-top: 16px; }
+.quote-card a:not(.btn) { color: var(--navy); }
+.sla { display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; margin-bottom: 16px; background: rgba(209, 154, 62, .16); color: var(--amber-deep); border-radius: 2px; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.form-card .btn[disabled] { opacity: .6; cursor: progress; }
+.hp { position: absolute; left: -9999px; }
+
+/* ---------- catalog: one row per category --------------------------------- */
+.catrow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(22px, 4vw, 56px); align-items: center; padding-block: clamp(36px, 5vw, 64px); border-top: 1px solid var(--line); scroll-margin-top: 70px; }
+.catrow:first-child { border-top: 0; padding-top: 0; }
+.catrow:nth-child(even) .catrow-img { order: 2; }
+.catrow-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 3px; }
+.catrow h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 12px; }
+.catrow .lede { font-size: 1rem; }
+.catrow ul { columns: 2; column-gap: 28px; margin: 20px 0 0; padding: 0; list-style: none; }
+.catrow li { break-inside: avoid; padding: 7px 0 7px 18px; position: relative; font-size: .9rem; color: var(--ink-70); }
+.catrow li::before { content: ""; position: absolute; left: 0; top: 15px; width: 8px; height: 2px; background: var(--amber); }
+.catrow-for { margin-top: 16px; font-size: .8rem; color: var(--ink-45); }
+.catrow-cta { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.catrow-cta .btn { padding: 12px 20px; font-size: .88rem; }
+
+/* ---------- responsive ---------------------------------------------------- */
+@media (max-width: 1000px) {
+  .value, .bill, .quote, .catrow { grid-template-columns: minmax(0, 1fr); }
+  .catrow:nth-child(even) .catrow-img { order: 0; }
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .top-login { display: none; }
+  .value-list, .steps { grid-template-columns: minmax(0, 1fr); }
+  .catrow ul { columns: 1; }
+  .cat { min-height: 190px; }
+}
+
+.cat-cta { background: var(--amber); color: #1a1408; }
+.cat-cta::after { display: none; }
+.cat-cta .cat-txt h3 { color: #1a1408; }
+.cat-cta .cat-txt p { color: rgba(26, 20, 8, .8); font-size: .88rem; }
+.cat-cta:hover { background: var(--amber-deep); }
+
+/* keep tall hero copy clear of the absolutely positioned header */
+.hero, .phead { padding-top: 112px; }

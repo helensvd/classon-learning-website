@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Classon Learning | Start a Kit Proposal</title>
-<meta name="description" content="Send your syllabus and cohort size for a line-by-line kit spec with wholesale pricing, book a call, or request the kit catalog.">
+<title>Classon Learning | Get a Quote</title>
+<meta name="description" content="Request a quote for student kits, uniforms or supplies. We reply the same business day.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Onest:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="css/landing.css">
 <link rel="stylesheet" href="css/pages.css">
-<link rel="stylesheet" href="css/shop.css">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
@@ -20,150 +20,108 @@
       <span class="brand-mark">C</span>
       <span>
         <span class="brand-name">Classon Learning</span>
-        <span class="brand-sub">Custom kits for schools</span>
+        <span class="brand-sub">Kits &amp; supplies for schools</span>
       </span>
     </a>
     <nav class="top-nav">
-      <a href="index.html#process">How it works</a>
       <a href="products.html">Kits</a>
-      <a href="shop.html">Shop</a>
+      <a href="index.html#how">How it works</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="btn btn-line" href="#form">Request a proposal</a>
+    <div class="top-actions">
+      <a class="top-login" href="https://shop.classonlearning.com/account">Client login</a>
+      <a class="btn btn-line" href="contact.html#form">Get a quote</a>
+    </div>
   </div>
 </header>
 
 <section class="phead">
-  <img src="https://images.unsplash.com/photo-1695527082039-5f96003b97e4?auto=format&fit=crop&w=2000&q=70"
-       alt="A bright salon training space set up for a class">
+  <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=2000&q=70"
+       alt="Boxed student kits ready to ship">
   <div class="phead-in">
-    <p class="eyebrow on-dark">Start here</p>
-    <h1>Tell us what you teach.</h1>
-    <p class="lede">Send a syllabus and a cohort size and you get a line-by-line kit spec with wholesale pricing back, usually within three business days.</p>
+    <p class="eyebrow on-dark">Get a quote</p>
+    <h1>Tell us what you need. We quote the same business day.</h1>
+    <p class="lede">A rough description is enough to start — the program, how many students, and anything you already know you want.</p>
   </div>
 </section>
 
-<!-- ============ THREE WAYS ============ -->
-<section class="sec">
-  <div class="shell">
-    <div class="sec-head">
-      <p class="eyebrow">Three ways to begin</p>
-      <h2>Whichever you pick, you reach someone who has run a program.</h2>
-      <p class="lede">Not a call center, and not a rep reading from a catalog they have never used.</p>
-    </div>
-    <div class="ways">
-      <article class="way">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1595284843477-f609b0f91e3f?auto=format&fit=crop&w=900&q=70" alt="Beauty and nail tools arranged on a work surface">
-        <div class="way-body">
-          <h3>Request a custom kit proposal</h3>
-          <p>The form below. Program details and cohort size are enough to start — a rough outline works if that is all you have right now.</p>
-          <a class="btn btn-ink" href="#form">Fill in the form</a>
-        </div>
-      </article>
-      <article class="way">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1739956802238-2f37aefec7e1?auto=format&fit=crop&w=900&q=70" alt="Instructors demonstrating a technique to a group of students">
-        <div class="way-body">
-          <h3>Book a call with our team</h3>
-          <p>Twenty minutes on your programs, your intake calendar, and what your students are currently buying for themselves.</p>
-          <a class="btn btn-ink" href="mailto:sales@classonlearning.com?subject=Booking%20a%20call%20-%20Classon%20Learning">Email to pick a time</a>
-        </div>
-      </article>
-      <article class="way">
-        <img loading="lazy" src="https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=900&q=70" alt="Boxed kits ready for dispatch">
-        <div class="way-body">
-          <h3>Download the kit catalog</h3>
-          <p>Every program we kit, what a standard build includes, and the minimum order quantities — something you can forward to finance.</p>
-          <a class="btn btn-ink" href="products.html">Browse the catalog</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FORM ============ -->
-<section class="sec sec-tint" id="form">
-  <div class="shell reach">
-
+<section class="sec" id="form">
+  <div class="shell quote">
     <div class="form-card">
-      <div class="confirm" id="confirm">
-        <strong>Your email draft is ready.</strong>
-        <div>We have opened a message to sales@classonlearning.com with your details filled in — send it and a representative will come back to you within one business day. If nothing opened, email us directly at <a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a>.</div>
+      <span class="sla">Same-business-day reply</span>
+      <div class="confirm" id="quote-confirm" role="status">
+        <strong>Thanks — your request is in.</strong>
+        Someone from our team will reply with a quote today, or first thing next business day if you sent this after hours.
       </div>
-
-      <form id="proposal-form" novalidate>
+      <form id="quote-form" novalidate>
         <div class="fields">
           <div class="field">
-            <label for="f-name">Your name</label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
+            <label for="q-name">Your name</label>
+            <input id="q-name" name="name" autocomplete="name" required>
           </div>
           <div class="field">
-            <label for="f-school">School or company</label>
-            <input id="f-school" name="school" type="text" autocomplete="organization" required>
+            <label for="q-email">Work email</label>
+            <input id="q-email" name="email" type="email" autocomplete="email" required>
           </div>
           <div class="field">
-            <label for="f-email">Email</label>
-            <input id="f-email" name="email" type="email" autocomplete="email" required>
+            <label for="q-school">School or organization</label>
+            <input id="q-school" name="school" autocomplete="organization">
           </div>
           <div class="field">
-            <label for="f-phone">Phone</label>
-            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+            <label for="q-phone">Phone (optional)</label>
+            <input id="q-phone" name="phone" type="tel" autocomplete="tel">
           </div>
           <div class="field">
-            <label for="f-country">Country</label>
-            <select id="f-country" name="country" required>
+            <label for="q-category">Kit type</label>
+            <select id="q-category" name="category" required>
               <option value="">Select one</option>
-              <option>United States</option>
-              <option>México</option>
-              <option>Other</option>
+              <option>Barbering</option>
+              <option>Cosmetology & hair design</option>
+              <option>Nail technology</option>
+              <option>Lash, brow & permanent makeup</option>
+              <option>Esthetics, makeup & spa</option>
+              <option>Culinary arts</option>
+              <option>Pastry, baking & mixology</option>
+              <option>HVAC/R & technical trades</option>
+              <option>Uniforms</option>
+              <option>Books, manuals & credentials</option>
+              <option>Merch, student store & restock</option>
+              <option>Several categories</option>
+              <option>Not sure yet</option>
             </select>
           </div>
           <div class="field">
-            <label for="f-buyer">Type of buyer</label>
-            <select id="f-buyer" name="buyer" required>
-              <option value="">Select one</option>
-              <option>Trade or vocational school</option>
-              <option>Distributor or reseller</option>
-              <option>Other institution</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="f-programs">Programs you run</label>
-            <input id="f-programs" name="programs" type="text" placeholder="Cosmetology, lash, HVAC/R…">
-          </div>
-          <div class="field">
-            <label for="f-cohort">Students per intake</label>
-            <input id="f-cohort" name="cohort" type="text" placeholder="e.g. 24">
+            <label for="q-students">Students per intake (approx.)</label>
+            <input id="q-students" name="students" inputmode="numeric">
           </div>
           <div class="field full">
-            <label for="f-message">Anything else we should know</label>
-            <textarea id="f-message" name="message" placeholder="Intake dates, board requirements, what you currently buy and what is not working about it…"></textarea>
+            <label for="q-message">What are you looking for?</label>
+            <textarea id="q-message" name="message" required placeholder="Program, what the kit should include, branding, target price per student, when you need it…"></textarea>
           </div>
         </div>
-        <button type="submit" class="btn btn-ink">Send my details</button>
-        <p class="form-note">This form opens a pre-filled message in your own email app — nothing is stored on this site. Prefer to write it yourself? <a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a></p>
+        <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-solid" type="submit">Send quote request</button>
+        <p class="form-note">We only use your details to reply to this request. Wholesale to schools and institutions only.</p>
       </form>
     </div>
 
-    <div class="rail-cards">
-      <div class="rail-card">
-        <h3>Sales</h3>
-        <p><a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a></p>
+    <aside class="quote-side">
+      <div class="quote-card">
+        <h3>Rather talk it through?</h3>
+        <p>Book 20 minutes with our team to walk through your programs, intake calendar and what your students buy today.</p>
+        <a class="btn btn-ink" href="#" data-book>Book a call</a>
       </div>
-      <div class="rail-card">
-        <h3>Call us</h3>
-        <p>+1 (555) 019-4420 — United States<br>+52 (55) 4040-1188 — México</p>
+      <div class="quote-card">
+        <h3>Existing client?</h3>
+        <p>Pay an invoice, see past orders and download invoices from your account.</p>
+        <a class="btn btn-ink" href="https://shop.classonlearning.com/account">Client login</a>
       </div>
-      <div class="rail-card">
-        <h3>What happens next</h3>
-        <p>We read the syllabus, draft a spec line by line, and send it back with wholesale pricing and the margin if you resell to students. A physical sample kit follows before anything is produced at volume.</p>
+      <div class="quote-card">
+        <h3>Email us</h3>
+        <p><a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a><br>English and Spanish.</p>
       </div>
-      <div class="rail-card">
-        <h3>Wholesale only</h3>
-        <p>Accounts are limited to schools, distributors and institutional buyers. We do not sell to individual consumers.</p>
-      </div>
-    </div>
-
+    </aside>
   </div>
 </section>
 
@@ -175,83 +133,44 @@
           <span class="brand-mark">C</span>
           <span><span class="brand-name">Classon Learning</span></span>
         </a>
-        <p class="foot-blurb">Custom training kits, uniforms and program merch for vocational schools in the United States and Mexico.</p>
+        <p class="foot-blurb">Custom kits, uniforms, books and supplies for vocational schools in the United States and Mexico — priced so your school keeps the margin.</p>
       </div>
       <div>
-        <h4>Programs</h4>
+        <h4>Kits</h4>
         <ul>
-          <li><a href="products.html#cosmetology">Cosmetology</a></li>
-          <li><a href="products.html#lash">Lash extension</a></li>
-          <li><a href="products.html#pmu">Permanent makeup</a></li>
-          <li><a href="products.html#hvac">HVAC/R</a></li>
-          <li><a href="products.html#culinary">Culinary</a></li>
+          <li><a href="products.html#barbering">Barbering</a></li>
+          <li><a href="products.html#hair">Cosmetology &amp; hair design</a></li>
+          <li><a href="products.html#nails">Nail technology</a></li>
+          <li><a href="products.html#lash-brow">Lash, brow &amp; permanent makeup</a></li>
+          <li><a href="products.html#esthetics">Esthetics, makeup &amp; spa</a></li>
+          <li><a href="products.html#culinary">Culinary arts</a></li>
+          <li><a href="products.html#pastry">Pastry, baking &amp; mixology</a></li>
+          <li><a href="products.html#trades">HVAC/R &amp; technical trades</a></li>
         </ul>
       </div>
       <div>
         <h4>Also supplied</h4>
         <ul>
-          <li><a href="shop.html">Order standard kits</a></li>
-          <li><a href="products.html#uniforms">Student uniforms</a></li>
-          <li><a href="products.html#merch">Program merch</a></li>
-          <li><a href="contact.html">Consumable restock</a></li>
+          <li><a href="products.html#uniforms">Uniforms</a></li>
+          <li><a href="products.html#books">Books, manuals &amp; credentials</a></li>
+          <li><a href="products.html#merch">Merch &amp; student store</a></li>
+          <li><a href="products.html#merch">Consumable restock</a></li>
         </ul>
       </div>
       <div>
-        <h4>Talk to us</h4>
+        <h4>Work with us</h4>
         <ul>
+          <li><a href="contact.html#form">Get a quote</a></li>
+          <li><a href="#" data-book>Book a call</a></li>
+          <li><a href="https://shop.classonlearning.com/account">Client login &amp; invoices</a></li>
           <li><a href="mailto:sales@classonlearning.com">sales@classonlearning.com</a></li>
-          <li>+1 (555) 019-4420</li>
-          <li>+52 (55) 4040-1188</li>
         </ul>
       </div>
     </div>
-    <p class="foot-note">© 2026 Classon Learning · Wholesale to institutions only — we do not sell to individual consumers.</p>
+    <p class="foot-note">© 2026 Classon Learning · Wholesale to schools and institutions only.</p>
   </div>
 </footer>
 
-<script>
-/* No backend here: the form composes a message in the visitor's own mail app.
-   Swap this for a POST to a form service when one is set up. */
-(function () {
-  var form = document.getElementById('proposal-form');
-  var confirmBox = document.getElementById('confirm');
-  if (!form) return;
-
-  var kit = new URLSearchParams(window.location.search).get('kit');
-  var notes = document.getElementById('f-message');
-  if (kit && notes && !notes.value) {
-    notes.value = 'Interested in an ongoing supply agreement for ' + kit + '. ';
-  }
-
-  var labels = {
-    name: 'Name', school: 'School / company', email: 'Email', phone: 'Phone',
-    country: 'Country', buyer: 'Type of buyer', programs: 'Programs',
-    cohort: 'Students per intake', message: 'Notes'
-  };
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
-
-    var data = new FormData(form);
-    var lines = [];
-    Object.keys(labels).forEach(function (key) {
-      var value = (data.get(key) || '').toString().trim();
-      if (value) lines.push(labels[key] + ': ' + value);
-    });
-
-    var subject = 'Kit proposal request — ' + ((data.get('school') || '').toString().trim() || 'new enquiry');
-    var body = 'Hello Classon Learning,\n\nWe would like a custom kit proposal.\n\n' + lines.join('\n') + '\n';
-
-    confirmBox.classList.add('show');
-    confirmBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    window.location.href = 'mailto:sales@classonlearning.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
-  });
-})();
-</script>
-
-<script src="js/shop.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
