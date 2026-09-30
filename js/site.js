@@ -38,25 +38,30 @@
     // Prefill from links like contact.html?category=Barbering#form
     var params = new URLSearchParams(window.location.search);
     var category = params.get('category');
-    var select = form.querySelector('[name="category"]');
-    if (category && select) {
-      for (var i = 0; i < select.options.length; i++) {
-        if (select.options[i].value === category) select.selectedIndex = i;
-      }
-    }
+    var boxes = form.querySelectorAll('input[name="category"]');
+    boxes.forEach(function (box) {
+      if (category && box.value === category) box.checked = true;
+    });
 
     var confirmBox = document.getElementById('quote-confirm');
     var button = form.querySelector('button[type="submit"]');
 
+    boxes.forEach(function (box) {
+      box.addEventListener('change', function () { boxes[0].setCustomValidity(''); });
+    });
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      var picked = [].filter.call(boxes, function (b) { return b.checked; }).map(function (b) { return b.value; });
+      boxes[0].setCustomValidity(picked.length ? '' : 'Pick at least one kit type.');
       if (!form.reportValidity()) return;
 
       var data = {};
-      new FormData(form).forEach(function (v, k) { data[k] = String(v).trim(); });
+      new FormData(form).forEach(function (v, k) { if (k !== 'category') data[k] = String(v).trim(); });
       if (data._honey) return;
+      data.categories = picked.join(', ');
 
-      data._subject = 'Quote request — ' + (data.category || 'kits') + ' — ' + (data.school || data.email);
+      data._subject = 'Quote request — ' + (picked.length > 1 ? picked.length + ' kit types' : picked[0]) + ' — ' + (data.school || data.email);
       data._template = 'table';
       data._replyto = data.email;
 

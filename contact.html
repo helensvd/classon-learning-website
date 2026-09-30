@@ -74,25 +74,23 @@
             <label for="q-phone">Phone (optional)</label>
             <input id="q-phone" name="phone" type="tel" autocomplete="tel">
           </div>
-          <div class="field">
-            <label for="q-category">Kit type</label>
-            <select id="q-category" name="category" required>
-              <option value="">Select one</option>
-              <option>Barbering</option>
-              <option>Cosmetology & hair design</option>
-              <option>Nail technology</option>
-              <option>Lash, brow & permanent makeup</option>
-              <option>Esthetics, makeup & spa</option>
-              <option>Culinary arts</option>
-              <option>Pastry, baking & mixology</option>
-              <option>HVAC/R, electrical & device repair</option>
-              <option>Uniforms</option>
-              <option>Books, manuals & credentials</option>
-              <option>Merch, student store & restock</option>
-              <option>Several categories</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
+          <fieldset class="field full kit-pick">
+            <legend>Kit types <span>(pick all that apply)</span></legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="category" value="Barbering"> Barbering</label>
+              <label class="check"><input type="checkbox" name="category" value="Cosmetology &amp; Hair Design"> Cosmetology &amp; Hair Design</label>
+              <label class="check"><input type="checkbox" name="category" value="Nail Technology"> Nail Technology</label>
+              <label class="check"><input type="checkbox" name="category" value="Lash, Brow &amp; Permanent Makeup"> Lash, Brow &amp; Permanent Makeup</label>
+              <label class="check"><input type="checkbox" name="category" value="Esthetics, Makeup &amp; Spa"> Esthetics, Makeup &amp; Spa</label>
+              <label class="check"><input type="checkbox" name="category" value="Culinary Arts"> Culinary Arts</label>
+              <label class="check"><input type="checkbox" name="category" value="Pastry, Baking &amp; Mixology"> Pastry, Baking &amp; Mixology</label>
+              <label class="check"><input type="checkbox" name="category" value="HVAC/R, Electrical &amp; Device Repair"> HVAC/R, Electrical &amp; Device Repair</label>
+              <label class="check"><input type="checkbox" name="category" value="Uniforms"> Uniforms</label>
+              <label class="check"><input type="checkbox" name="category" value="Books, Manuals &amp; Credentials"> Books, Manuals &amp; Credentials</label>
+              <label class="check"><input type="checkbox" name="category" value="Merch, Student Store &amp; Restock"> Merch, Student Store &amp; Restock</label>
+              <label class="check"><input type="checkbox" name="category" value="Not sure yet"> Not sure yet</label>
+            </div>
+          </fieldset>
           <div class="field">
             <label for="q-students">Students per intake (approx.)</label>
             <input id="q-students" name="students" inputmode="numeric">
@@ -140,10 +138,10 @@
       <div>
         <h4>Kits</h4>
         <ul>
-          <li><a href="products.html#beauty">Beauty &amp; wellness</a></li>
-          <li><a href="products.html#culinary-hospitality">Culinary &amp; hospitality</a></li>
-          <li><a href="products.html#skilled-trades">Skilled trades</a></li>
-          <li><a href="products.html#every-program">For every program</a></li>
+          <li><a href="products.html#beauty">Beauty &amp; Wellness</a></li>
+          <li><a href="products.html#culinary-hospitality">Culinary &amp; Hospitality</a></li>
+          <li><a href="products.html#skilled-trades">Skilled Trades</a></li>
+          <li><a href="products.html#every-program">For Every Program</a></li>
         </ul>
       </div>
       <div>
